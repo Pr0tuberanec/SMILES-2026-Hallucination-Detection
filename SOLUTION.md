@@ -32,6 +32,9 @@ python solution.py
 Below are the experiments behind each design choice
 
 ---
+### 2.0 Metric interpretation
+
+I followed Accuracy, F1, and AUROC from the original evaluation pipeline. Due to class imbalance (483 hallucinated vs 206 truthful), accuracy alone is not very informative, since the majority baseline already reaches ~70%. Therefore, I also relied on F1 and AUROC to better reflect model performance under imbalance and to evaluate ranking quality beyond a fixed threshold
 
 ### 2.1. Layer and pooling selection
 
